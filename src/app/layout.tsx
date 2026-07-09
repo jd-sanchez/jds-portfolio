@@ -25,7 +25,7 @@ const siteUrl = "https://jds.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "JDS — Jerico Dane Sanchez | Full-Stack & AI Developer",
+  title: "Jerico Dane Sanchez | Full-Stack & AI Developer",
   description:
     "Portfolio of Jerico Dane Sanchez (JDS) — full-stack and AI developer building offline-first apps, RAG pipelines, and production browser-engine code.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Jerico Dane Sanchez" }],
   openGraph: {
-    title: "JDS — Jerico Dane Sanchez",
+    title: "Jerico Dane Sanchez",
     description:
       "Full-stack and AI developer — offline-first apps, RAG pipelines, and production browser-engine code.",
     url: siteUrl,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "JDS — Jerico Dane Sanchez",
+    title: "Jerico Dane Sanchez",
     description:
       "Full-stack and AI developer — offline-first apps, RAG pipelines, and production browser-engine code.",
   },
