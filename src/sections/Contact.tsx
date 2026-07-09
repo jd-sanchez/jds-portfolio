@@ -3,12 +3,11 @@
 import { contact } from "@/data/content";
 import { SectionHeading } from "@/components/SectionHeading";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { FacebookIcon, GithubIcon, LinkedinIcon } from "@/components/icons";
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
 
 const links = [
   { label: "GitHub", href: contact.github, Icon: GithubIcon },
   { label: "LinkedIn", href: contact.linkedin, Icon: LinkedinIcon },
-  { label: "Facebook", href: contact.facebook, Icon: FacebookIcon },
 ];
 
 export function Contact() {
