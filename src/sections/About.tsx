@@ -18,7 +18,7 @@ export function About() {
         title={
           <>
             Building things that{" "}
-            <span className="underline decoration-4 underline-offset-4">actually ship.</span>
+            <span className="underline decoration-4 underline-offset-4">actually matter.</span>
           </>
         }
       />

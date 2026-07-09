@@ -15,7 +15,7 @@ export function BackToTop() {
 
   return (
     <a
-      href="#hero"
+      href="#home"
       aria-label="Back to top"
       className={`surface fixed right-6 bottom-24 z-40 flex size-11 items-center justify-center rounded-full text-muted transition-all duration-300 hover:border-border-strong hover:text-foreground md:bottom-6 ${
         visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-3 opacity-0"

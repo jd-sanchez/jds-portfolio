@@ -41,7 +41,7 @@ export function Hero() {
   );
 
   return (
-    <section id="hero" ref={scope} className="relative">
+    <section id="home" ref={scope} className="relative">
       <BeamsBackground intensity="subtle">
         <div className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 pt-32 pb-24 text-center">
           <span

@@ -6,12 +6,12 @@ import { identity } from "@/data/content";
 export function Brand() {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    document.getElementById("hero")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <a
-      href="#hero"
+      href="#home"
       onClick={handleClick}
       aria-label={`${identity.name} home`}
       className="group fixed top-4 left-4 z-40 -m-2 block p-2 sm:top-6 sm:left-6"

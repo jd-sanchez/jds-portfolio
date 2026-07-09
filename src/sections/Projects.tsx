@@ -12,7 +12,7 @@ export function Projects() {
     <section id="projects" ref={scope} className="relative mx-auto max-w-5xl px-6 py-28">
       <SectionHeading
         eyebrow="Projects"
-        title="Shipped, not just prototyped."
+        title="Built, not just imagined."
         description="Full-stack AI products built and deployed end to end, from idea to something users actually open."
       />
 
