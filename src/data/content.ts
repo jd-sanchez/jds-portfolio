@@ -137,16 +137,36 @@ export const skills: SkillGroup[] = [
     items: ["Python", "JavaScript", "TypeScript", "Dart", "SQL", "C", "C++"],
   },
   {
-    label: "Frameworks",
-    items: ["React.js", "Next.js", "FastAPI", "LangChain", "Express.js", "Flutter", "Tailwind"],
+    label: "Frontend",
+    items: ["React.js", "Next.js", "Tailwind", "Flutter", "TypeScript"],
+  },
+  {
+    label: "Backend",
+    items: ["Node.js", "Express.js", "FastAPI", "Python"],
+  },
+  {
+    label: "AI / ML",
+    items: [
+      "LangChain",
+      "OpenAI API",
+      "Groq API",
+      "RAG Pipelines",
+      "ChromaDB",
+      "FastEmbed",
+      "Recommendation Systems",
+    ],
+  },
+  {
+    label: "AI Workflow",
+    items: ["Claude Code", "n8n", "Label Studio"],
   },
   {
     label: "Databases",
     items: ["MongoDB", "Supabase", "Firebase", "PostgreSQL", "SQLite", "MySQL"],
   },
   {
-    label: "Tools",
-    items: ["AWS (S3, Lambda)", "OpenAI API", "Git", "GitHub", "VS Code", "n8n", "Label Studio", "Docker"],
+    label: "Cloud & DevOps",
+    items: ["AWS (S3, Lambda)", "Docker", "Git", "GitHub"],
   },
 ];
 
