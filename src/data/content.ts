@@ -71,6 +71,7 @@ export const experience: ExperienceEntry[] = [
     highlights: [
       "Delivered full-stack internal web applications for paid client projects as part of a 3-person development team, owning schema design and Next.js + Tailwind frontend implementation.",
       "Owned the full request lifecycle from API to UI, coordinating contracts with teammates before implementation to minimize integration bugs at client handoff.",
+      "Gathered and clarified requirements directly with clients, translating business needs into API contracts and technical specs that guided implementation.",
     ],
   },
 ];
