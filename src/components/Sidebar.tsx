@@ -1,7 +1,15 @@
 "use client";
 
 import { useRef } from "react";
-import { Briefcase, FolderGit2, Mail, Sparkles, User, type LucideIcon } from "lucide-react";
+import {
+  Briefcase,
+  FolderGit2,
+  GitCommitHorizontal,
+  Mail,
+  Sparkles,
+  User,
+  type LucideIcon,
+} from "lucide-react";
 import { nav } from "@/data/content";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { gsap, useGSAP } from "@/lib/gsap";
@@ -10,6 +18,7 @@ const icons: Record<string, LucideIcon> = {
   "#about": User,
   "#experience": Briefcase,
   "#projects": FolderGit2,
+  "#github": GitCommitHorizontal,
   "#skills": Sparkles,
   "#contact": Mail,
 };
