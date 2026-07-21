@@ -72,6 +72,8 @@ export function ProjectCard({ project, index }: { project: ProjectEntry; index: 
           ))}
         </div>
 
+        <p className="max-w-md text-sm leading-relaxed text-muted">{project.description}</p>
+
         {project.liveUrl && (
           <span className="mt-1 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-muted transition-colors group-hover:text-foreground">
             View Project

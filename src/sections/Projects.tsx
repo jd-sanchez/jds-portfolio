@@ -16,7 +16,7 @@ export function Projects() {
         description="Full-stack AI products built and deployed end to end, from idea to something users actually open."
       />
 
-      <div className="mt-14 flex flex-col overflow-hidden">
+      <div className="mt-14 flex flex-col gap-6">
         {projects.map((project, index) => (
           <ProjectCard key={project.name} project={project} index={index} />
         ))}

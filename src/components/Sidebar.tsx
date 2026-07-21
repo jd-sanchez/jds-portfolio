@@ -2,9 +2,9 @@
 
 import { useRef } from "react";
 import {
+  Award,
   Briefcase,
   FolderGit2,
-  GitCommitHorizontal,
   Mail,
   Sparkles,
   User,
@@ -18,8 +18,8 @@ const icons: Record<string, LucideIcon> = {
   "#about": User,
   "#experience": Briefcase,
   "#projects": FolderGit2,
-  "#github": GitCommitHorizontal,
   "#skills": Sparkles,
+  "#certifications": Award,
   "#contact": Mail,
 };
 

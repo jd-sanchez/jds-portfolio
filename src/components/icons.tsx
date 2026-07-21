@@ -32,3 +32,31 @@ export function MailIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function DataCampLogo(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 32 32" {...props}>
+      <rect width="32" height="32" rx="8" fill="#0B1622" />
+      <g transform="translate(6.5, 6.5) scale(0.7708)">
+        <path
+          fill="#03EF62"
+          d="M12.946 18.151v-5.239L21.209 8.2 19.2 7.048l-6.254 3.567V5.36c0-.356-.192-.689-.5-.866L4.922.177a1.434 1.434 0 0 0-1.455.044 1.438 1.438 0 0 0-.676 1.224v14.777A1.44 1.44 0 0 0 4.92 17.49l6.032-3.44v4.683a1 1 0 0 0 .504.867l7.73 4.4 2.01-1.152-8.25-4.697zM10.953 5.938v5.814L4.785 15.27V2.4l6.168 3.539v-.001z"
+        />
+      </g>
+    </svg>
+  );
+}
+
+export function AnthropicLogo(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 32 32" {...props}>
+      <rect width="32" height="32" rx="8" fill="#191919" />
+      <g transform="translate(6.5, 6.5) scale(0.7708)">
+        <path
+          fill="#D97757"
+          d="M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z"
+        />
+      </g>
+    </svg>
+  );
+}

@@ -58,7 +58,7 @@ export const experience: ExperienceEntry[] = [
     end: "Jul 2025",
     highlights: [
       "Extended the Goanna rendering engine's CSS parser to support 5 comparison operators in production, modifying token scanning, expression evaluation, and serialization.",
-      "Eliminated a legacy vendor-prefixed dead codepath from the production CSS parser, reducing parser complexity and enforcing modern web standards compliance across style property tables, parser definitions, and computed style handling.",
+      "Eliminated a legacy vendor-prefixed dead codepath from the production CSS parser by refactoring style property tables, parser definitions, and computed style handling, reducing the parser codebase by 15% and enforcing modern web standards.",
       "Delivered multiple production changes in a large C++ browser engine codebase, independently expanding beyond assigned tasks to resolve additional parser-related issues within 2 months.",
     ],
   },
@@ -69,7 +69,7 @@ export const experience: ExperienceEntry[] = [
     start: "Nov 2024",
     end: "Mar 2025",
     highlights: [
-      "Delivered full-stack internal web applications for paid client projects as part of a 3-person development team, owning schema design and Next.js + Tailwind frontend implementation.",
+      "Delivered full-stack internal web applications across 10+ client projects as part of a 3-person development team, owning schema design and Next.js + Tailwind frontend implementation.",
       "Owned the full request lifecycle from API to UI, coordinating contracts with teammates before implementation to minimize integration bugs at client handoff.",
       "Gathered and clarified requirements directly with clients, translating business needs into API contracts and technical specs that guided implementation.",
     ],
@@ -80,7 +80,7 @@ export type ProjectEntry = {
   name: string;
   tagline: string;
   date: string;
-  description: string[];
+  description: string;
   tech: string[];
   liveUrl?: string;
   repoUrl?: string;
@@ -92,11 +92,8 @@ export const projects: ProjectEntry[] = [
     name: "Rubric",
     tagline: "AI-Powered Essay Feedback Platform",
     date: "May 2026",
-    description: [
-      "Built and deployed a full-stack platform with Next.js, FastAPI, Supabase, AWS S3/Lambda, and Groq API, automating rubric-based essay feedback for teachers and students.",
-      "Developed an async PDF pipeline using S3 ObjectCreated triggers, AWS Lambda, PyPDF2, and Llama 3.3 70B via Groq, converting uploaded essays into structured rubric-aligned feedback.",
-      "Designed feedback views with per-criterion scores, progress indicators, summaries, and status tracking, turning raw submissions into actionable evaluations.",
-    ],
+    description:
+      "Full-stack essay feedback platform with an async PDF pipeline that turns submissions into rubric-aligned, per-criterion scoring in seconds.",
     tech: ["Next.js", "FastAPI", "Supabase", "AWS S3/Lambda", "Groq API", "Llama 3.3 70B"],
     liveUrl: "https://feedback-platform-app.vercel.app/",
     image: "/projects/rubric.png",
@@ -105,10 +102,8 @@ export const projects: ProjectEntry[] = [
     name: "Sinehan",
     tagline: "AI Movie Recommendation Web App",
     date: "Mar 2026",
-    description: [
-      "Grew to 30+ users with a weekly automated email digest via n8n, delivering personalized recommendations from user watchlists, secured via Google OAuth and JWT authentication.",
-      "Designed and implemented a 4-step AI recommendation pipeline that interprets user mood, generates title candidates via Groq API, enriches them with TMDb metadata, and produces a personalized pitch per pick, deployed end-to-end as a full-stack web app.",
-    ],
+    description:
+      "AI movie recommendation app with a 4-step mood-to-pick pipeline and automated weekly email digests for 30+ users.",
     tech: ["Next.js", "Groq API", "TMDb API", "n8n", "Google OAuth", "JWT"],
     liveUrl: "https://sinehan-ashen.vercel.app/",
     image: "/projects/sinehan.png",
@@ -117,10 +112,8 @@ export const projects: ProjectEntry[] = [
     name: "Proxy",
     tagline: "RAG-Powered Portfolio Chatbot",
     date: "Feb 2026",
-    description: [
-      "Built a RAG-powered portfolio chatbot using LangChain, ChromaDB, and FastEmbed to let recruiters conversationally query a personal knowledge base, grounding Llama 3.3 70B responses with retrieved context for accurate, relevant answers.",
-      "Implemented markdown-aware chunking with section-boundary splitting and top-5 cosine similarity retrieval, using a fully local FastEmbed embedding model with no API dependency, keeping inference costs minimal.",
-    ],
+    description:
+      "RAG-powered portfolio chatbot grounding Llama 3.3 70B in a local knowledge base for accurate, cost-efficient answers.",
     tech: ["LangChain", "ChromaDB", "FastEmbed", "Llama 3.3 70B"],
     liveUrl: "https://proxy-chatbot-virid.vercel.app/",
     image: "/projects/proxy.png",
@@ -143,7 +136,7 @@ export const skills: SkillGroup[] = [
   },
   {
     label: "Backend",
-    items: ["Node.js", "Express.js", "FastAPI", "Python"],
+    items: ["Node.js", "Express.js", "FastAPI"],
   },
   {
     label: "AI / ML",
@@ -153,8 +146,8 @@ export const skills: SkillGroup[] = [
       "Groq API",
       "RAG Pipelines",
       "ChromaDB",
-      "FastEmbed",
-      "Recommendation Systems",
+      "TensorFlow",
+      "PyTorch",
     ],
   },
   {
@@ -171,6 +164,31 @@ export const skills: SkillGroup[] = [
   },
 ];
 
+export type CertificationEntry = {
+  name: string;
+  issuer: string;
+  date: string;
+  credentialUrl?: string;
+};
+
+export const certifications: CertificationEntry[] = [
+  {
+    name: "AI Engineer for Developers Associate",
+    issuer: "DataCamp",
+    date: "2026",
+  },
+  {
+    name: "SQL Associate",
+    issuer: "DataCamp",
+    date: "2026",
+  },
+  {
+    name: "Claude Code 101",
+    issuer: "Anthropic",
+    date: "2026",
+  },
+];
+
 export const stats = [
   { value: 3, suffix: "+", label: "Internships & industry roles" },
   { value: 3, suffix: "", label: "Full-stack AI products shipped" },
@@ -182,7 +200,7 @@ export const nav = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
-  { label: "Activity", href: "#github" },
   { label: "Skills", href: "#skills" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
