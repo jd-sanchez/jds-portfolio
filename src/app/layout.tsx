@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { CustomCursor } from "@/components/CustomCursor";
+import { Preloader } from "@/components/Preloader";
 import "./globals.css";
 
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -64,6 +65,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-noise relative overflow-x-clip">
         <div className="fixed inset-0 -z-10 bg-grid" aria-hidden="true" />
+        <Preloader />
         <CustomCursor />
         {children}
         <Analytics />

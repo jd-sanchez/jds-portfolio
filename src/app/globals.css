@@ -165,6 +165,13 @@ body {
   }
 }
 
+/* Preloader: SplitText chars need inline-block for transform + 3D flip */
+.preloader-char {
+  display: inline-block;
+  transform-origin: 50% 100%;
+  backface-visibility: hidden;
+}
+
 /* Custom cursor: hide the native pointer only once the JS cursor is active */
 html.custom-cursor-active,
 html.custom-cursor-active * {
