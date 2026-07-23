@@ -39,13 +39,14 @@ export function About() {
 
           <p data-reveal className="text-lg leading-relaxed text-muted">
             Over the past few years I have picked up experience across{" "}
-            <Highlight>internships and full-stack projects</Highlight>, taking products from
-            an idea to something real users rely on.
+            <Highlight>internships, startup work, and full-stack projects</Highlight>, taking
+            products from an idea to something real users rely on.
           </p>
 
           <p data-reveal className="text-lg leading-relaxed text-muted">
             Outside of code, I am usually <Highlight>studying</Highlight>, deep in a{" "}
-            <Highlight>game</Highlight>, or at the movies catching whatever just came out.
+            <Highlight>game</Highlight>, lifting at the <Highlight>gym</Highlight>, or at
+            the movies catching whatever just came out.
           </p>
         </div>
 
