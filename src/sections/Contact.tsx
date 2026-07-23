@@ -4,6 +4,7 @@ import { contact } from "@/data/content";
 import { SectionHeading } from "@/components/SectionHeading";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { ContactForm } from "@/components/ContactForm";
 
 const links = [
   { label: "GitHub", href: contact.github, Icon: GithubIcon },
@@ -42,6 +43,8 @@ export function Contact() {
           .
         </p>
       </div>
+
+      <ContactForm />
 
       <div data-reveal className="mt-10 flex items-center justify-center gap-4">
         {links

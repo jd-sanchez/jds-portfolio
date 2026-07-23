@@ -68,9 +68,6 @@ export function Certifications() {
                       <Check className="size-3" strokeWidth={3} aria-hidden="true" />
                     </span>
                   </div>
-                  <span className="font-mono text-[10px] tracking-[0.2em] text-muted uppercase">
-                    Verified
-                  </span>
                 </div>
 
                 <div className="flex flex-1 flex-col gap-3 p-6 sm:p-7">
